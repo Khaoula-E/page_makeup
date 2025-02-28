@@ -1,0 +1,51 @@
+.cards {
+    display: flex;
+    flex-wrap: wrap; /* Permet de passer à la ligne si besoin */
+}
+
+
+
+
+.card {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Empile les éléments verticalement */
+    align-items: center; /* Centre horizontalement */
+    box-shadow: 0px 4px 30px rgba(0,0,0,0.2);
+    border-radius: 6px;
+    margin: 4px;
+    background: #f8f9fa; /* Fond légèrement coloré */
+    flex-basis: 270px; /* Largeur de base */
+    flex-grow: 1; /* Permet de prendre toute la largeur disponible */
+}
+
+.card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 1px; /* Espacement sous l'image */
+    border: 2px solid #2c3e50; /* Bordure accentuant le cercle */
+    object-fit: cover;
+    object-position: top center;
+}
+
+#nutritionist img {
+    object-position: left center;
+}
+
+
+.card h3 {
+    font-size: 26px;
+    margin-bottom: 5px; /* Espacement sous le titre */
+    color: #2c3e50; /* Couleur foncée pour le titre */
+    text-align: center; /* Centrage du texte */
+}
+
+.card p {
+    text-align: center;
+    font-size: 16px;
+    color: #7f8c8d; /* Couleur secondaire */
+    line-height: 1.6;
+    max-width: 600px; /* Largeur maximale pour le texte */
+    margin-bottom: 20px; /* Espacement sous le texte */
+}
